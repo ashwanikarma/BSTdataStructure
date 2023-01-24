@@ -26,7 +26,7 @@ namespace BinarySearchTreeAssign
             {
                 if (this.leftTree == null)
                 {
-                    // leftCount++;
+                    leftCount++;
                     this.leftTree = new BinarySearchTree<T>(item);
                 }
                 else
@@ -36,7 +36,7 @@ namespace BinarySearchTreeAssign
             {
                 if (this.rightTree == null)
                 {
-                    //rightCount++;
+                    rightCount++;
                     this.rightTree = new BinarySearchTree<T>(item);
                 }
                 else
@@ -54,6 +54,10 @@ namespace BinarySearchTreeAssign
             {
                 this.rightTree.Display();
             }
+        }
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + leftCount + rightCount));
         }
     }
 }
